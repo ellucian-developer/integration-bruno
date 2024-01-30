@@ -14,10 +14,6 @@ auth:bearer {
   token: {{ethosApiKey}}
 }
 
-script:post-response {
-  bru.setEnvVar("ethosApiToken", res.getBody());
-}
-
 tests {
   bru.setEnvVar("ethosApiToken", res.getBody());
 }

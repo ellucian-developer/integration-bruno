@@ -5,13 +5,17 @@ meta {
 }
 
 get {
-  url: persons?criteria={"id":"5305f3ee-a0a8-4893-9722-4c50ac9557a1"}
+  url: persons?personFilter={"personFilter":"a8cce3fd-2ed7-4c7f-b912-0e09619af577"}
   body: none
   auth: bearer
 }
 
 query {
-  criteria: {"id":"5305f3ee-a0a8-4893-9722-4c50ac9557a1"}
+  personFilter: {"personFilter":"a8cce3fd-2ed7-4c7f-b912-0e09619af577"}
+}
+
+headers {
+  Accept: application/vnd.hedtech.integration.v12+json
 }
 
 auth:bearer {
