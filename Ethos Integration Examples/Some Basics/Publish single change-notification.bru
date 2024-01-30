@@ -1,0 +1,41 @@
+meta {
+  name: Publish single change-notification
+  type: http
+  seq: 7
+}
+
+post {
+  url: https://integrate.elluciancloud.com/publish
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/vnd.hedtech.change-notifications.v2+json
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}
+
+body:json {
+  {
+    "resource": {
+      "name": "buildings",
+      "id": "fee12eb6-dae1-456b-a7c4-063458617478",
+      "version": "application/vnd.hedtech.integration.v6+json"
+    },
+    "operation": "replaced",
+    "contentType": "resource-representation",
+    "content": {
+      "code": "BLD1",
+      "title": "Building 1",
+      "description": "the first building",
+      "id": "fee12eb6-dae1-456b-a7c4-063458617478"
+    }
+  }
+}
+
+script:pre-request {
+  // 
+}

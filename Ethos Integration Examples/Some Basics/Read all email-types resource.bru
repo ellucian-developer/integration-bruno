@@ -1,0 +1,15 @@
+meta {
+  name: Read all email-types resource
+  type: http
+  seq: 3
+}
+
+get {
+  url: email-types
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}

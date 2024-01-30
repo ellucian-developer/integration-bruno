@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL student-advisor-relationships
+  type: http
+  seq: 39
+}
+
+get {
+  url: /student-advisor-relationships
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

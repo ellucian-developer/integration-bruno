@@ -1,0 +1,16 @@
+meta {
+  name: GET about
+  type: http
+  seq: 3
+}
+
+get {
+  url: /about
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

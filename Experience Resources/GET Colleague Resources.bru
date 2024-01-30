@@ -1,0 +1,16 @@
+meta {
+  name: GET Colleague Resources
+  type: http
+  seq: 4
+}
+
+get {
+  url: /resources
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

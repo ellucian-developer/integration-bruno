@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL grade-definitions
+  type: http
+  seq: 20
+}
+
+get {
+  url: /grade-definitions
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

@@ -1,0 +1,19 @@
+meta {
+  name: GET sections filter for academic-period and course
+  type: http
+  seq: 10
+}
+
+get {
+  url: sections?criteria={"academicPeriod":{"id":"17920c56-7a4c-4f00-9a39-4801b7e6fc58"},"course":{"id":"b5f58254-4d30-4052-ac8b-6d20898e232b"}}
+  body: none
+  auth: bearer
+}
+
+query {
+  criteria: {"academicPeriod":{"id":"17920c56-7a4c-4f00-9a39-4801b7e6fc58"},"course":{"id":"b5f58254-4d30-4052-ac8b-6d20898e232b"}}
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}

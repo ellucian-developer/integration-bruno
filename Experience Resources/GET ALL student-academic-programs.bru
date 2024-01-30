@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL student-academic-programs
+  type: http
+  seq: 37
+}
+
+get {
+  url: /student-academic-programs
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

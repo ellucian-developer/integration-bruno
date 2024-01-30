@@ -1,0 +1,15 @@
+meta {
+  name: -errors
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://integrate.elluciancloud.com/errors
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}

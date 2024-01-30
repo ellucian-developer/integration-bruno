@@ -1,0 +1,20 @@
+meta {
+  name: GET persons by Banner ID
+  type: http
+  seq: 45
+}
+
+get {
+  url: /persons?criteria={"credentials":[{"type":"bannerId","value":"S000123456"}]}
+  body: none
+  auth: none
+}
+
+query {
+  criteria: {"credentials":[{"type":"bannerId","value":"S000123456"}]}
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

@@ -1,0 +1,16 @@
+meta {
+  name: GET Banner Resources-student
+  type: http
+  seq: 6
+}
+
+get {
+  url: /resources-student
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

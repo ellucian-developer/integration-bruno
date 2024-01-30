@@ -1,0 +1,23 @@
+meta {
+  name: Use API Key to get Access Token
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://integrate.elluciancloud.com/auth
+  body: text
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{ethosApiKey}}
+}
+
+script:post-response {
+  bru.setEnvVar("ethosApiToken", res.getBody());
+}
+
+tests {
+  bru.setEnvVar("ethosApiToken", res.getBody());
+}

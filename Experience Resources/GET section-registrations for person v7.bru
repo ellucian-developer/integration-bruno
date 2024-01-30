@@ -1,0 +1,20 @@
+meta {
+  name: GET section-registrations for person v7
+  type: http
+  seq: 33
+}
+
+get {
+  url: /section-registrations?registrant={{personGuid}}
+  body: none
+  auth: none
+}
+
+query {
+  registrant: {{personGuid}}
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/vnd.hedtech.integration.v7+json
+}

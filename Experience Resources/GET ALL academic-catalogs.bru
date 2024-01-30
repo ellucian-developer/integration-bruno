@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL academic-catalogs
+  type: http
+  seq: 7
+}
+
+get {
+  url: /academic-catalogs
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

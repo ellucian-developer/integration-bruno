@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL section-instructors
+  type: http
+  seq: 29
+}
+
+get {
+  url: /section-instructors
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Read all courses resource
+  type: http
+  seq: 2
+}
+
+get {
+  url: courses
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}

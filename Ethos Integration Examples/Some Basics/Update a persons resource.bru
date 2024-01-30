@@ -1,0 +1,77 @@
+meta {
+  name: Update a persons resource
+  type: http
+  seq: 5
+}
+
+put {
+  url: persons/e17f9afb-ad01-4727-bd98-6664258decb0
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/vnd.hedtech.integration.v8+json
+  Accept: application/vnd.hedtech.integration.v8+json
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}
+
+body:json {
+  {
+    "privacyStatus": {
+      "privacyCategory": "unrestricted"
+    },
+    "names": [
+      {
+        "type": {
+          "category": "legal",
+          "detail": {
+            "id": "5e59d3e4-61a8-4f61-9a18-05ae62a5b003"
+          }
+        },
+        "fullName": "Mr. James Smith",
+        "title": "Mr.",
+        "firstName": "James",
+        "lastName": "Smith",
+        "preference": "preferred"
+      }
+    ],
+    "dateOfBirth": "1994-12-07",
+    "gender": "male",
+    "roles": [
+      {
+        "role": "student"
+      }
+    ],
+    "credentials": [
+      {
+        "type": "colleaguePersonId",
+        "value": "0000255"
+      },
+      {
+        "type": "ssn",
+        "value": "135-79-2468"
+      }
+    ],
+    "addresses": [
+      {
+        "address": {
+          "id": "1cd57963-6f6b-4df0-b8eb-dec4a0a72e58"
+        },
+        "type": {
+          "addressType": "home",
+          "detail": {
+            "id": "c70b16d2-be85-4d43-a4b6-c13941c50d6e"
+          }
+        },
+        "startOn": "2001-10-08T00:00:00",
+        "preference": "primary"
+      }
+    ],
+    "metadata": {},
+    "id": "e17f9afb-ad01-4727-bd98-6664258decb0"
+  }
+}

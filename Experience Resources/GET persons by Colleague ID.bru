@@ -1,0 +1,20 @@
+meta {
+  name: GET persons by Colleague ID
+  type: http
+  seq: 44
+}
+
+get {
+  url: /persons?criteria={"credentials":[{"type":"colleaguePersonId","value":"0001234"}]}
+  body: none
+  auth: none
+}
+
+query {
+  criteria: {"credentials":[{"type":"colleaguePersonId","value":"0001234"}]}
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

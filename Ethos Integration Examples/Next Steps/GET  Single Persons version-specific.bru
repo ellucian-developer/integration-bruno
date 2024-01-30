@@ -1,0 +1,19 @@
+meta {
+  name: GET  Single Persons version-specific
+  type: http
+  seq: 2
+}
+
+get {
+  url: persons/00000000-0000-0000-0000-000000000000
+  body: none
+  auth: bearer
+}
+
+headers {
+  Accept: application/vnd.hedtech.integration.v12+json
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}

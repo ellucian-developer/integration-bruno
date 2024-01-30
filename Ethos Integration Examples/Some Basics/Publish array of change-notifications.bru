@@ -1,0 +1,58 @@
+meta {
+  name: Publish array of change-notifications
+  type: http
+  seq: 8
+}
+
+post {
+  url: https://integrate.elluciancloud.com/publish
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/vnd.hedtech.change-notifications.v2+json
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}
+
+body:json {
+  [
+    {
+      "resource": {
+        "name": "buildings",
+        "id": "fee12eb6-dae1-456b-a7c4-063458617478",
+        "version": "application/vnd.hedtech.integration.v6+json"
+      },
+      "operation": "replaced",
+      "contentType": "resource-representation",
+      "content": {
+        "code": "BLD1",
+        "title": "Building 1",
+        "description": "the first building",
+        "id": "fee12eb6-dae1-456b-a7c4-063458617478"
+      }
+    },
+    {
+      "resource": {
+        "name": "buildings",
+        "id": "9d7c0f72-9eb4-4b76-83f1-e4a6a5fcab69",
+        "version": "application/vnd.hedtech.integration.v6+json"
+      },
+      "operation": "replaced",
+      "contentType": "resource-representation",
+      "content": {
+        "code": "BLD2",
+        "title": "Building 2",
+        "description": "the second building",
+        "id": "9d7c0f72-9eb4-4b76-83f1-e4a6a5fcab69"
+      }
+    }
+  ]
+}
+
+script:pre-request {
+  // 
+}

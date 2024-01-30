@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL advisor-types
+  type: http
+  seq: 14
+}
+
+get {
+  url: /advisor-types
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

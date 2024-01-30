@@ -1,0 +1,25 @@
+meta {
+  name: qapi building-codes
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://integrate.elluciancloud.com/qapi/building-codes
+  body: json
+  auth: bearer
+}
+
+headers {
+  Accept: application/vnd.hedtech.integration.v1.0.0+json
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}
+
+body:json {
+  {
+      "code": "1BJSS"
+  }
+}

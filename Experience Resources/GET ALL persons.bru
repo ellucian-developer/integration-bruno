@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL persons
+  type: http
+  seq: 26
+}
+
+get {
+  url: /persons
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

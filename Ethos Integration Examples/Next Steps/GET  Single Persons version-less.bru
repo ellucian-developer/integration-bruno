@@ -1,0 +1,15 @@
+meta {
+  name: GET  Single Persons version-less
+  type: http
+  seq: 1
+}
+
+get {
+  url: persons/00000000-0000-0000-0000-000000000000
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}

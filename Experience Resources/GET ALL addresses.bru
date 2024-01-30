@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL addresses
+  type: http
+  seq: 13
+}
+
+get {
+  url: /addresses
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

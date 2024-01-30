@@ -1,0 +1,19 @@
+meta {
+  name: sections-inquiry
+  type: http
+  seq: 1
+}
+
+get {
+  url: sections-inquiry?termCode=202370
+  body: none
+  auth: bearer
+}
+
+query {
+  termCode: 202370
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}

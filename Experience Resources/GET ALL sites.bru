@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL sites
+  type: http
+  seq: 36
+}
+
+get {
+  url: /sites
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

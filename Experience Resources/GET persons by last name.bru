@@ -1,0 +1,20 @@
+meta {
+  name: GET persons by last name
+  type: http
+  seq: 43
+}
+
+get {
+  url: /persons?criteria={"names":[{"lastName":"Johnson"}],"roles":[{"role":"student"}]}
+  body: none
+  auth: none
+}
+
+query {
+  criteria: {"names":[{"lastName":"Johnson"}],"roles":[{"role":"student"}]}
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

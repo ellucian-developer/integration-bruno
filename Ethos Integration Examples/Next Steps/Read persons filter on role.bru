@@ -1,0 +1,19 @@
+meta {
+  name: Read persons filter on role
+  type: http
+  seq: 12
+}
+
+get {
+  url: persons?criteria={"roles":[{"role":"student"}]}
+  body: none
+  auth: bearer
+}
+
+query {
+  criteria: {"roles":[{"role":"student"}]}
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}

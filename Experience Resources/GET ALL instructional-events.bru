@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL instructional-events
+  type: http
+  seq: 21
+}
+
+get {
+  url: /instructional-events
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

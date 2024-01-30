@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL academic-disciplines
+  type: http
+  seq: 9
+}
+
+get {
+  url: /academic-disciplines
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

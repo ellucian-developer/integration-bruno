@@ -1,0 +1,19 @@
+meta {
+  name: GET institution-jobs filter for person
+  type: http
+  seq: 9
+}
+
+get {
+  url: institution-jobs?criteria={"person":{"id":"4ff5a7da-1db9-4f5f-9c6c-86b05374eb52"}}
+  body: none
+  auth: bearer
+}
+
+query {
+  criteria: {"person":{"id":"4ff5a7da-1db9-4f5f-9c6c-86b05374eb52"}}
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}

@@ -1,0 +1,26 @@
+meta {
+  name: TEST Get an Access Token for Test
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{ethosIntegrationUrl}}?expirationMinutes=30
+  body: text
+  auth: none
+}
+
+query {
+  expirationMinutes: 30
+}
+
+headers {
+  Authorization: Bearer {{ethosApiKey}}
+  Accept: application/json
+}
+
+tests {
+  // var newToken = responseBody;
+  // postman.setEnvironmentVariable("token", newToken);
+  // 
+}

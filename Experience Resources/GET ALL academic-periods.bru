@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL academic-periods
+  type: http
+  seq: 11
+}
+
+get {
+  url: /academic-periods
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

@@ -1,0 +1,17 @@
+meta {
+  name: GET ALL courses
+  type: http
+  seq: 16
+}
+
+get {
+  url: /courses
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Content-type: application/vnd.hedtech.integration.v1+json
+  Accept: application/json
+}

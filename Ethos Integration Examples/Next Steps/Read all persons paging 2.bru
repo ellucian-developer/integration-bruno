@@ -1,0 +1,20 @@
+meta {
+  name: Read all persons paging 2
+  type: http
+  seq: 7
+}
+
+get {
+  url: persons?offset=100&limit=100
+  body: none
+  auth: bearer
+}
+
+query {
+  offset: 100
+  limit: 100
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}

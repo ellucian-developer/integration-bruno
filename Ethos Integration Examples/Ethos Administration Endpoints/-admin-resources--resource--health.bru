@@ -1,0 +1,15 @@
+meta {
+  name: -admin-resources--resource--health
+  type: http
+  seq: 6
+}
+
+get {
+  url: https://integrate.elluciancloud.com/admin/resources/buildings/health
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}

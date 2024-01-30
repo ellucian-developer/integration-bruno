@@ -1,0 +1,20 @@
+meta {
+  name: GET section-registrations by registrant
+  type: http
+  seq: 32
+}
+
+get {
+  url: /section-registrations?criteria={"registrant":{"id":"{{personGuid}}"}}
+  body: none
+  auth: none
+}
+
+query {
+  criteria: {"registrant":{"id":"{{personGuid}}"}}
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

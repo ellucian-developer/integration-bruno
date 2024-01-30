@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL personal-pronouns
+  type: http
+  seq: 22
+}
+
+get {
+  url: /personal-pronouns
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

@@ -1,0 +1,16 @@
+meta {
+  name: GET Banner Resources-integration
+  type: http
+  seq: 5
+}
+
+get {
+  url: /resources-integration
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

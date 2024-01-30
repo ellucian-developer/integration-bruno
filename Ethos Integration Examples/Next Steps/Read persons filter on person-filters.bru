@@ -1,0 +1,19 @@
+meta {
+  name: Read persons filter on person-filters
+  type: http
+  seq: 11
+}
+
+get {
+  url: persons?criteria={"id":"5305f3ee-a0a8-4893-9722-4c50ac9557a1"}
+  body: none
+  auth: bearer
+}
+
+query {
+  criteria: {"id":"5305f3ee-a0a8-4893-9722-4c50ac9557a1"}
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}

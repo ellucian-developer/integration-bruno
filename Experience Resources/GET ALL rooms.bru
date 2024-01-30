@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL rooms
+  type: http
+  seq: 27
+}
+
+get {
+  url: /rooms
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

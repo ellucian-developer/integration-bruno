@@ -1,0 +1,17 @@
+meta {
+  name: GET ALL educational-institution-units
+  type: http
+  seq: 18
+}
+
+get {
+  url: /educational-institution-units
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Content-type: application/vnd.hedtech.integration.v1+json
+  Accept: application/json
+}

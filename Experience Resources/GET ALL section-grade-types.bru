@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL section-grade-types
+  type: http
+  seq: 28
+}
+
+get {
+  url: /section-grade-types
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL gender-identities
+  type: http
+  seq: 19
+}
+
+get {
+  url: /gender-identities
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

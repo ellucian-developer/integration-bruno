@@ -1,0 +1,19 @@
+meta {
+  name: Read courses filter by subject
+  type: http
+  seq: 5
+}
+
+get {
+  url: courses?criteria={"subject":{"id":"4a0c95f7-0903-408a-8694-77b313809909"}}
+  body: none
+  auth: bearer
+}
+
+query {
+  criteria: {"subject":{"id":"4a0c95f7-0903-408a-8694-77b313809909"}}
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Read courses filter on title
+  type: http
+  seq: 4
+}
+
+get {
+  url: courses?criteria={"titles":[{"value":"Principles of Marketing"}]}
+  body: none
+  auth: bearer
+}
+
+query {
+  criteria: {"titles":[{"value":"Principles of Marketing"}]}
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}

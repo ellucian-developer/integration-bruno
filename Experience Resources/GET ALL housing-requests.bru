@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL housing-requests
+  type: http
+  seq: 46
+}
+
+get {
+  url: /housing-requests
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

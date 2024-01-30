@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL subjects
+  type: http
+  seq: 42
+}
+
+get {
+  url: /subjects
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

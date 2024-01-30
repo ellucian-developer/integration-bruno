@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL person-hold-types
+  type: http
+  seq: 23
+}
+
+get {
+  url: /person-hold-types
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

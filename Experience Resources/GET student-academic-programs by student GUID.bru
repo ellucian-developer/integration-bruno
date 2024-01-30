@@ -1,0 +1,20 @@
+meta {
+  name: GET student-academic-programs by student GUID
+  type: http
+  seq: 38
+}
+
+get {
+  url: /student-academic-programs?criteria={"student":{"id":"{{personGuid}}"}}
+  body: none
+  auth: none
+}
+
+query {
+  criteria: {"student":{"id":"{{personGuid}}"}}
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

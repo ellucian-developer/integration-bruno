@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL academic-levels
+  type: http
+  seq: 10
+}
+
+get {
+  url: /academic-levels
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

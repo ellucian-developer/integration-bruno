@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL students
+  type: http
+  seq: 41
+}
+
+get {
+  url: /students
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

@@ -1,0 +1,15 @@
+meta {
+  name: -appconfig
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://integrate.elluciancloud.com/appconfig
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}

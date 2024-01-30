@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL section-registrations
+  type: http
+  seq: 31
+}
+
+get {
+  url: /section-registrations
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/json
+}

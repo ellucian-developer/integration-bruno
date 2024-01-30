@@ -1,0 +1,15 @@
+meta {
+  name: -audit-logs
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://integrate.elluciancloud.com/audit-logs
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{ethosApiToken}}
+}
