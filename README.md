@@ -1,10 +1,10 @@
 # Ethos Integration Bruno Examples
 
-Bruno is a Fast and Git-Friendly Opensource API client, aimed at revolutionizing the status quo represented by Postman, Insomnia and similar tools out there.
+Bruno is a Fast and Git-Friendly Opensource API client, aimed at revolutionizing the status quo represented by Postman, Insomnia and similar tools out there. It stores your collections directly in a folder on your filesystem and it uses a plain text markup language, Bru, to save information about API requests.
 
-Bruno stores your collections directly in a folder on your filesystem. We use a plain text markup language, Bru, to save information about API requests
+This repository contains a Bruno collection and environment. A collection is simply a group of related API requests. The collection here contains examples of how to do things in Ethos Integration like obtaining an access token, calling GET/POST/PUT/DEL on a resource and consuming change-requests. An environment is a set of key-value pairs, essentially variables, that can be shared among API requests. The environment in this repository is used to store an API key and JWT access token.
 
-More at https://www.usebruno.com
+For more Bruno learning and documentation start here https://www.usebruno.com
 
 ### Getting Started
 
@@ -35,7 +35,8 @@ On the configuration popup, provide the right Ethos API Key and then hit Save
     <img src="/docs/images/configure.jpg" />
 </p>
 
-With the configuration complete, you are now ready to initiate API execution
+After configuring the environment variables, choose `Ethos Integration` as your environment. 
+Now, you are now ready to initiate API execution.
 
 <p align="center">
     <img src="/docs/images/execute.jpg" />
