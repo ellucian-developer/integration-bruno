@@ -74,7 +74,7 @@ script:pre-request {
   
   if (
       req.getUrl().toString().substring(0, 4) !== "http" &&
-      req.getUrl().toString().indexOf('auth') === -1
+      !req.getUrl().toString().endsWith('auth')
   ) {
       let currentUrl = req.getUrl();
       if (currentUrl.charAt(0) === "/") {
