@@ -1,0 +1,16 @@
+meta {
+  name: GET ALL section-registration-information
+  type: http
+  seq: 49
+}
+
+get {
+  url: section-registration-information
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/vnd.hedtech.integration.v1+json
+}
