@@ -1,0 +1,20 @@
+meta {
+  name: GET section-schedule-information by Id
+  type: http
+  seq: 52
+}
+
+get {
+  url: section-schedule-information?criteria={"sectionsId":"{{sectionId}}"}
+  body: none
+  auth: none
+}
+
+query {
+  criteria: {"sectionsId":"{{sectionId}}"}
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/vnd.hedtech.integration.v1+json
+}

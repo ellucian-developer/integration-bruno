@@ -1,0 +1,20 @@
+meta {
+  name: GET section-registration-information by range
+  type: http
+  seq: 51
+}
+
+get {
+  url: section-registration-information?criteria={"startDateRange":"2024-02-18","endDateRange":"2024-08-16","registrantId":"{{personGuid}}"}
+  body: none
+  auth: none
+}
+
+query {
+  criteria: {"startDateRange":"2024-02-18","endDateRange":"2024-08-16","registrantId":"{{personGuid}}"}
+}
+
+headers {
+  Authorization: Bearer {{ethosApiToken}}
+  Accept: application/vnd.hedtech.integration.v1+json
+}
